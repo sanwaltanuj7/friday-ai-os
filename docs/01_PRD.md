@@ -556,3 +556,294 @@ The system shall:
 - Simple navigation
 - Dark Mode
 - Mobile-friendly interface
+
+# 10. User Stories
+
+The following user stories describe how different users will interact with FRIDAY AI OS.
+
+---
+
+## Authentication
+
+### Story 1
+
+**As a new user**, I want to create an account using my email or Google account so that I can securely access FRIDAY AI OS.
+
+### Acceptance Criteria
+
+- User can register using email.
+- User can register using Google OAuth.
+- Email verification is required.
+- Secure JWT authentication is implemented.
+
+---
+
+## AI Chat
+
+### Story 2
+
+**As a user**, I want to chat naturally with FRIDAY so that I can receive intelligent assistance.
+
+### Acceptance Criteria
+
+- Streaming responses
+- Markdown support
+- Code syntax highlighting
+- Conversation history
+- Search previous conversations
+
+---
+
+## Resume Analysis
+
+### Story 3
+
+**As a job seeker**, I want to upload my resume so FRIDAY can identify missing skills and recommend improvements.
+
+### Acceptance Criteria
+
+- Resume upload
+- Resume parsing
+- Skill extraction
+- ATS score
+- Recommendations
+
+---
+
+## Coding Assistant
+
+### Story 4
+
+**As a developer**, I want FRIDAY to review my code so I can improve code quality.
+
+### Acceptance Criteria
+
+- Code explanation
+- Bug detection
+- Refactoring suggestions
+- Documentation generation
+
+---
+
+## Memory
+
+### Story 5
+
+**As a returning user**, I want FRIDAY to remember previous conversations so I don't repeat information.
+
+### Acceptance Criteria
+
+- Persistent memory
+- Semantic retrieval
+- User preferences
+- Editable memories
+
+---
+
+## Research
+
+### Story 6
+
+**As a researcher**, I want FRIDAY to summarize multiple sources into one report.
+
+### Acceptance Criteria
+
+- Multi-source summarization
+- Citation support
+- Report generation
+
+# 11. MVP Scope
+
+Version 1.0 focuses on delivering a production-ready AI assistant capable of assisting users with career development, intelligent conversations, and workflow automation.
+
+## Included
+
+### Platform
+
+- User Authentication
+- Dashboard
+- Profile
+- Settings
+
+### AI
+
+- AI Chat
+- Streaming Responses
+- Conversation History
+- Memory
+
+### Career
+
+- Resume Upload
+- Resume Analysis
+- ATS Score
+- Skill Gap Analysis
+- Job Recommendations
+
+### Orchestrator
+
+- Intent Detection
+- Workflow Planning
+- Agent Routing
+
+### Files
+
+- PDF Upload
+- DOCX Upload
+- CSV Upload
+
+---
+
+## Not Included
+
+- Voice Assistant
+- Smart Home Integration
+- Mobile Application
+- Finance Agent
+- Travel Agent
+- DevOps Agent
+- Legal Agent
+- Autonomous Purchases
+
+# 12. Success Metrics (KPIs)
+
+The success of FRIDAY AI OS will be measured using the following Key Performance Indicators.
+
+## Product Metrics
+
+- Daily Active Users (DAU)
+- Monthly Active Users (MAU)
+- User Retention
+- Average Session Duration
+- User Satisfaction Score
+
+---
+
+## AI Metrics
+
+- Response Accuracy
+- Task Completion Rate
+- Memory Retrieval Accuracy
+- Tool Invocation Success Rate
+- Agent Collaboration Success Rate
+
+---
+
+## Career Metrics
+
+- Resume Improvement Rate
+- ATS Score Improvement
+- Job Match Accuracy
+- Interview Success Feedback
+
+---
+
+## Technical Metrics
+
+- API Response Time
+- Error Rate
+- System Availability
+- Infrastructure Cost
+
+# 13. Future Roadmap
+
+## Version 1.0
+
+- AI Chat
+- Memory
+- Career Agent
+- Resume Analysis
+- Orchestrator
+
+---
+
+## Version 2.0
+
+- Browser Agent
+- Coding Agent
+- Research Agent
+- Calendar Agent
+- Email Agent
+
+---
+
+## Version 3.0
+
+- Voice Assistant
+- Mobile App
+- Desktop Application
+- Multi-device Synchronization
+
+---
+
+## Version 4.0
+
+- Team Collaboration
+- Enterprise Dashboard
+- API Marketplace
+- Custom AI Agents
+
+# 14. Risks and Mitigation
+
+| Risk | Impact | Mitigation |
+|-------|--------|------------|
+| AI hallucinations | High | Validation, citations, user approval |
+| External API failures | Medium | Retry mechanisms and graceful fallbacks |
+| Security vulnerabilities | High | Authentication, RBAC, encrypted storage |
+| Large infrastructure costs | Medium | Caching, rate limiting, optimization |
+| Poor user adoption | High | User feedback and iterative improvements |
+
+# 15. Assumptions
+
+The following assumptions guide the development of FRIDAY AI OS.
+
+- Users have internet connectivity.
+- Users consent to storing long-term memory.
+- AI models are available through external providers.
+- Users approve sensitive actions before execution.
+- Modern browsers support all frontend features.
+- Third-party APIs remain available and stable.
+
+# Appendix
+
+## Technology Stack
+
+### Frontend
+
+- Next.js
+- React
+- TypeScript
+- Tailwind CSS
+- shadcn/ui
+
+### Backend
+
+- FastAPI
+- Python
+- SQLAlchemy
+- Alembic
+
+### Databases
+
+- PostgreSQL
+- MongoDB
+- Qdrant (Vector Database)
+- Redis
+
+### AI
+
+- GPT-5.5
+- LangGraph
+- OpenAI Agents SDK (Future)
+
+### Infrastructure
+
+- Docker
+- GitHub Actions
+- Railway
+- Vercel
+
+### Version Control
+
+- Git
+- GitHub
